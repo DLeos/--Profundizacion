@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profundización</title>
+    <link rel="stylesheet" href="Profundización/style-reset.css">
+    <link rel="stylesheet" href="Profundización/style.css">
+</head>
+<body>
+    <header>
+        <h1>Profundización</h1>        
+    </header>
+    <main>
+        <section class="datos_iniciales">
+            <section class="actividadEconomica">
+                <h3>Situación económica</h3>
+                <label class="label_Actividad" for="detalleActividadEconomicaActual">Actividad actual:</label>
+                <input class="input_Actividad" id="detalleActividadEconomicaActual" type="text" placeholder="Ejemplo: Empleado">
+                <label class="label_Contrato" for="detalleTipoDeContrato">Tipo de contrato:</label>
+                <input class="input_Contrato" id="detalleTipoDeContrato" type="text" placeholder="Ejemplo: Prestacion de servicios">
+                <label class="label_Cargo" for="detallecargo">Cargo:</label>
+                <input class="input_Cargo" id="detallecargo" type="text" placeholder="Ejemplo: Operador">
+                <label class="label_Antiguedad" for="detalleAntiguedad">Antigüedad:</label>
+                <input class="input_Antiguedad" id="detalleAntiguedad" type="text" placeholder="Ejemplo: 1 año">
+                <label class="label_Periodicidad" for="detalleFrecuenciaIngresos">Periodicidad de los ingresos:</label>
+                <input class="input_Periodicidad" id="detalleFrecuenciaIngresos" type="text" placeholder="Ejemplo: Quincenales">
+            </section>
+            <section class="resultados">
+                <h3>Disponible</h3>
+                <label class="label_Ingresos" for="detalleTotalIngresos">Total ingresos:</label>
+                <input class="input_Ingresos" id="detalleTotalIngresos" type="text">
+                <label class="label_Gastos" for="detalleTotalGastos">Total gastos:</label>
+                <input class="input_Gastos" id="detalleTotalGastos" type="text">
+                <label class="label_Disponible" for="detalleDisponible">Disponible:</label>
+                <input class="input_Disponible" id="detalleDisponible" type="text">
+                <!-- <label class="label_Cuota-proyectada" for="cuotaproyectada">Cuota proyectada:</label>
+                <input class="input_Cuota-proyectada" id="cuotaproyectada" type="text" placeholder="Ingresar valor proyectado"> -->
+            </section>
+        </section>
+        <section class="problematica">
+            <h3>Problemática</h3>
+            <div class="detalle_delasituacion">
+                <div class="div_problematica">
+                    <label class="label_Problematica" for="detalleSituacionDeLaMora">Situación de la mora:</label>
+                    <textarea class="textarea_Problematica" id="detalleSituacionDeLaMora" cols="30" rows="5" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                </div>
+                <div class="div_superacion">
+                    <label class="label_Superacion" for="detalleSuperacionDeLaSituacion">Superación de la situación:</label>
+                    <textarea class="textarea_Superacion" id="detalleSuperacionDeLaSituacion" cols="30" rows="5" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                </div>
+            </div>            
+        </section>
+        <section class="activos_pasivos">
+            <section class="ingresos">
+                <h3>Ingresos</h3>
+                <label class="label_Principales" for="detallePrincipales">Principales:</label>
+                <input class="input_Principales" type="text" placeholder="Valor">
+                <textarea class="textarea_Principales" id="detallePrincipales" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>                
+                <label class="label_Adicionales" for="detalleAdicionales">Adicionales:</label>
+                <input class="input_Adicionales" type="text" placeholder="Valor">
+                <textarea class="textarea_Adicionales" id="detalleAdicionales" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label class="label_Codeudor" for="detalleCodeudor">Codeudor:</label>
+                <input class="input_Codeudor" type="text" placeholder="Valor">
+                <textarea class="textarea_Codeudor" id="detalleCodeudor" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label for="soporteingresos">¿Tiene soportes de los ingresos?:<input class="checkbox_soporteingresos" type="checkbox" id="soporteingresos"></label>
+            </section>
+            <section class="gastos">
+                <h3>Gastos</h3>
+                <label class="label_Personales" for="detallePersonales" title="Alimentación, arriendo, transporte, hijos, familiares y educación">Personales:</label>
+                <input class="input_Personales" type="text" placeholder="Valor">
+                <textarea class="textarea_Personales" id="detallePersonales" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label class="label_Servicios" for="detalleServicios" title="Agua, luz, gas, internet, teléfono, televisión, datos">Servicios:</label>
+                <input class="input_Servicios" type="text" placeholder="Valor">
+                <textarea class="textarea_Servicios" id="detalleServicios" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label class="label_Financieras" for="detalleDeudasFinancieras" title="Créditos y tarjetas de crédito (detalle del estado)">Deudas financieras:</label>
+                <input class="input_Financieras"  type="text" placeholder="Valor">
+                <textarea class="textarea_Financieras" id="detalleDeudasFinancieras" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label class="label_Real" for="detalleSectorReal" title="Créditos con cooperativas y/o revistas (detalle del estado)">Sector real:</label>
+                <input class="input_Real"  type="text" placeholder="Valor">
+                <textarea class="textarea_Real" id="detalleSectorReal" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label class="label_Otros" for="detalleOtros" title="Créditos terceros, gasolina y/o adicionales">Otros:</label>
+                <input class="input_Otros" type="text" placeholder="Valor">
+                <textarea class="textarea_Otros" id="detalleOtros" cols="30" rows="1" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+                <label class="label_EsCodeudor" for="detalleEsCodeudor" title="Con otros productos o con el estado">¿Codeudor o deudor solidario?:</label>
+                <input class="input_EsCodeudor" id="detalleEsCodeudor" type="text" placeholder="Si/No Detalles">
+            </section>
+        </section>        
+        <section class="observacion">
+            <div class="div_adicionales">
+                <h3>Datos Adicionales:</h3>
+                <textarea class="datos_Adicionales" name="" id="" cols="30" rows="5" placeholder="Detalle" title="(La casilla se puede ampliar, margen inferior derecha)"></textarea>
+            </div>
+            <div class="observacionCopiado">
+                <h3>Observación:</h3>
+                <textarea class="resultadoObservacion" name="" id="" cols="30" rows="5" placeholder="Aquí queda todo"></textarea>
+                <button class="copiarTexto" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="Profundización/index.js"></script>
+</body>
+</html>
